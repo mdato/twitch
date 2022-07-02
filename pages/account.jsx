@@ -1,10 +1,12 @@
 import React from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { FaGithub } from "react-icons/fa";
-	   import { BsGoogle } from "react-icons/bs";
+import { FaJenkins } from "react-icons/fa";
+import { IoMdLogIn } from "react-icons/Io";
+//import { BsGoogle } from "react-icons/bs";
 import Image from "next/image";
 
-const Account = () => {
+const account = () => {
   const { data: session } = useSession();
   if (session) {
     return (
@@ -34,9 +36,11 @@ return (
         className="flex items-center justify-center p-3 bg-gray-600 border border-gray-600 my-2"
         onClick={() => signIn()}
       >
-        <FaGithub className="mr-2" />
-        Sign in with<span className="font-bold pl-1">Github</span>
+        <IoMdLogIn className="mr-2" />
+        <span className="font-bold pl-1">Sign In</span>
       </button>
+      
+      {/* 
       <button
         className="flex items-center justify-center p-3 bg-blue-600 border border-blue-600 my-2"
         onClick={() => signIn()}
@@ -44,6 +48,8 @@ return (
         <BsGoogle className="mr-2" />
         Sign in with<span className="font-bold pl-1">Google</span>
       </button>
+      */}
+      
     </div>
   );
 
@@ -51,4 +57,4 @@ return (
 }	 
 
 
-export default Account;
+export default account;
