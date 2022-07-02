@@ -475,7 +475,7 @@ const Navbar = () => {
       <div className="hidden md:flex grow items-center justify-end">
         {session ? (
           <div className="flex items-center">
-            <Link href="/account">
+            <Link href="/Account">
               <div className="">
                 <p className="pr-4 cursor-pointer">
                   Welcome, {session.user.name}
@@ -509,7 +509,7 @@ const Navbar = () => {
                     <Menu.Item>
                       {({ active }) => (
                         <Link
-                          href="/account"
+                          href="/Account"
                           className={classNames(
                             active
                               ? "bg-gray-500 text-gray-100"
@@ -545,12 +545,12 @@ const Navbar = () => {
         ) : (
           <div className="flex items-center">
             <TbCrown size={32} className="mr-[8px] px-1 hover:bg-gray-500" />
-            <Link href="/account">
+            <Link href="/Account">
             <button className="mr-3 px-3 py-[5px] rounded-md font-bold text-sm bg-[#3a3a3d] hover:bg-violet-600 justify-center">
                 Log in
               </button>
             </Link>
-            <Link href="/account">
+            <Link href="/Account">
               <button className="mr-3 px-3 py-[5px] rounded-md font-bold text-sm bg-[#9146FE] hover:bg-violet-600 justify-center">
                 Sign Up
               </button>
@@ -585,7 +585,7 @@ const Navbar = () => {
             <Link href="/#categories">top Categories</Link>
           </li>
           <li onClick={() => setNav(false)} className="p-4 text-3xl font-bold">
-            <Link href="/account">Account</Link>
+            <Link href="/Account">Account</Link>
           </li>
         </ul>
       </div>
