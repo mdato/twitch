@@ -18,7 +18,7 @@ const LiveChannels = () => {
     <div id="live" className="p-2 md:p-8">
       <h2 className="text-xl font-bold px-2">
         <span className="text-[#9147ff]">Live Channels </span>
-        we think you'll like
+        we think you will like
       </h2>
 
       {/* Container */}

@@ -6,7 +6,7 @@ const Categories = () => {
     <div id="categories" className="p-2 md:p-8">
       <h2 className="text-xl font-bold px-2">
         <span className="text-[#9147ff]">Categories </span>
-        we think you'll like
+        we think you will like
       </h2>
       {/* Container */}
       <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-10 gap-2 py-2">
