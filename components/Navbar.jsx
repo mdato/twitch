@@ -66,59 +66,6 @@ const Navbar = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              {/*
-              <Menu.Items className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none">
-                <div className="py-1">
-                  <Menu.Item>
-                    {({ active }) => (
-                      <a
-                        href="#"
-                        className={classNames(
-                          active
-                            ? "bg-gray-500 text-gray-100"
-                            : "text-gray-200",
-                          "block px-4 py-1 text-sm"
-                        )}
-                      >
-                        Account Settings
-                      </a>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <a
-                        href="#"
-                        className={classNames(
-                          active
-                            ? "bg-gray-500 text-gray-100"
-                            : "text-gray-200",
-                          "block px-4 py-1 text-sm"
-                        )}
-                      >
-                        Support
-                      </a>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <a
-                        href="#"
-                        className={classNames(
-                          active
-                            ? "bg-gray-500 text-gray-100"
-                            : "text-gray-200",
-                          "block px-4 py-1 text-sm"
-                        )}
-                      >
-                        License
-                      </a>
-                    )}
-                  </Menu.Item>
-                </div>
-              </Menu.Items>
-
-                        */}
-
               <Menu.Items className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-[#0e0e10] ring-1 ring-white ring-opacity-5 focus:outline-none">
                 <div className="py-1">
                   <h1 className="text-[#71797E] block px-4 py-1 text-sm font-bold">
@@ -475,7 +422,7 @@ const Navbar = () => {
       <div className="hidden md:flex grow items-center justify-end">
         {session ? (
           <div className="flex items-center">
-            <Link href="/Account">
+            <Link href="/account">
               <div className="">
                 <p className="pr-4 cursor-pointer">
                   Welcome, {session.user.name}
@@ -509,7 +456,7 @@ const Navbar = () => {
                     <Menu.Item>
                       {({ active }) => (
                         <Link
-                          href="/Account"
+                          href="/account"
                           className={classNames(
                             active
                               ? "bg-gray-500 text-gray-100"
@@ -545,12 +492,12 @@ const Navbar = () => {
         ) : (
           <div className="flex items-center">
             <TbCrown size={32} className="mr-[8px] px-1 hover:bg-gray-500" />
-            <Link href="/Account">
-            <button className="mr-3 px-3 py-[5px] rounded-md font-bold text-sm bg-[#3a3a3d] hover:bg-violet-600 justify-center">
+            <Link href="/account">
+              <button className="mr-3 px-3 py-[5px] rounded-md font-bold text-sm bg-[#3a3a3d] hover:bg-violet-600 justify-center">
                 Log in
               </button>
             </Link>
-            <Link href="/Account">
+            <Link href="/account">
               <button className="mr-3 px-3 py-[5px] rounded-md font-bold text-sm bg-[#9146FE] hover:bg-violet-600 justify-center">
                 Sign Up
               </button>
@@ -585,7 +532,7 @@ const Navbar = () => {
             <Link href="/#categories">top Categories</Link>
           </li>
           <li onClick={() => setNav(false)} className="p-4 text-3xl font-bold">
-            <Link href="/Account">Account</Link>
+            <Link href="/account">Account</Link>
           </li>
         </ul>
       </div>
