@@ -6,7 +6,7 @@ import { IoMdLogIn } from "react-icons/Io";
 //import { BsGoogle } from "react-icons/bs";
 import Image from "next/image";
 
-const account = () => {
+const Account = () => {
   const { data: session } = useSession();
   if (session) {
     return (
@@ -57,4 +57,4 @@ return (
 }	 
 
 
-export default account;
+export default Account;
